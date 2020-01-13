@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Baires-asesoría`,
+    description: `Baires asesoria, esta situada en Irún Gupuzkoa. Tenemos servicios tanto para autónomos como para empresa.`,
+    author: `@alfonso`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
