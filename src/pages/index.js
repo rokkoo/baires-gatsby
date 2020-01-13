@@ -22,7 +22,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Text>Baires-asesoría</Text>
     <Description>
-      Esta página esta en construcción, la página estara disponible en los
+      Esta página esta en construcción, la página estará disponible en los
       próximos días.
     </Description>
     <Description>Disculpen las molestias</Description>
