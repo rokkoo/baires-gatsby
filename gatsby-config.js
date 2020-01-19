@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Baires-asesoría`,
-    description: `Baires asesoria, esta situada en Irún Gupuzkoa. Tenemos servicios tanto para autónomos como para empresa.`,
+    description: `Asesoria Baires es una asesoría Contable, fiscal y laboral en Paseo Colón de Irún, Gipuzkoa, dedicada a autónomos, empresas y emprendedores.`,
     author: `@alfonso`,
   },
   plugins: [
