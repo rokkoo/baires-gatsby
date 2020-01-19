@@ -10,6 +10,7 @@ import { useOnClickOutside } from "../hooks/useOnClickOutside"
 
 // Components
 import Menu from "./menu"
+import LongMenu from "./longMenu"
 import Burger from "./burger"
 
 const HeaderComponent = ({ siteTitle }) => {
@@ -21,6 +22,7 @@ const HeaderComponent = ({ siteTitle }) => {
     <Header>
       <p>Baires-asesoría</p>
       <MenuWrapper ref={menuRef}>
+        <LongMenu />
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </MenuWrapper>

@@ -20,3 +20,9 @@ export const MenuWrapper = styled.div`
   align-items: center;
   margin-right: 10px;
 `
+
+export const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`

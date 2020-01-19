@@ -19,4 +19,6 @@ export const GlobalStyles = createGlobalStyle`
     overflow-y: hidden;
     overflow-x: hidden;
   }
+
+
   `

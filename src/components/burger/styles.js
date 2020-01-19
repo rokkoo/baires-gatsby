@@ -1,5 +1,9 @@
 import styled from "styled-components"
 export const StyledBurger = styled.button`
+  @media (min-width: ${({ theme }) => theme.mobile}) {
+    display: none;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
