@@ -1,19 +1,26 @@
+import React, { useState, useRef } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
 
+// Styles
 import { Header, MenuWrapper } from "./styles"
 
+// Hooks
+import { useOnClickOutside } from "../hooks/useOnClickOutside"
+
+// Components
 import Menu from "./menu"
 import Burger from "./burger"
 
 const HeaderComponent = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
+  const menuRef = useRef()
+  useOnClickOutside(menuRef, () => setOpen(false))
 
   return (
     <Header>
       <p>Baires-asesoría</p>
-      <MenuWrapper>
+      <MenuWrapper ref={menuRef}>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </MenuWrapper>

@@ -23,20 +23,19 @@ export default () => (
     render={data => (
       <Carousel autoplay>
         {data.allFile.edges.map((pic, i) => (
-          <>
+          <div key={i}>
             <BackgroundImage
-              key={i}
               Tag="section"
               fluid={pic.node.childImageSharp.fluid}
               backgroundColor={`#040e18`}
               style={{
-                height: 300,
+                height: 230,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "flex-end",
               }}
             ></BackgroundImage>
-          </>
+          </div>
         ))}
       </Carousel>
     )}
