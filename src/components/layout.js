@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-// Styles
-import { Main } from "./styles"
+import { ThemeProvider } from "styled-components"
+import { GlobalStyles } from "./global"
+import { theme } from "./theme"
 
 import Header from "./header"
 
@@ -26,12 +27,21 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-
-      <Main>{children}</Main>
-      <footer></footer>
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            margin: `0 auto`,
+            paddingTop: 0,
+          }}
+        >
+          <main>{children}</main>
+          <footer>© {new Date().getFullYear()}</footer>
+        </div>
+      </>
+    </ThemeProvider>
   )
 }
 
