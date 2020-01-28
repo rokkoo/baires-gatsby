@@ -16,7 +16,7 @@ import Burger from "./burger"
 const HeaderComponent = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
   const menuRef = useRef()
-  useOnClickOutside(menuRef, () => setOpen(false))
+  useOnClickOutside(menuRef, setOpen)
 
   return (
     <Header>
