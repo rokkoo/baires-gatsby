@@ -1,9 +1,17 @@
 import React, { useState, useRef } from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import PropTypes from "prop-types"
 
 // Styles
-import { Header, MenuWrapper } from "./styles"
+import {
+  Header,
+  MenuWrapper,
+  Banner,
+  Content,
+  BannerText,
+  Block,
+} from "./styles"
 
 // Hooks
 import { useOnClickOutside } from "../hooks/useOnClickOutside"
@@ -12,20 +20,55 @@ import { useOnClickOutside } from "../hooks/useOnClickOutside"
 import Menu from "./menu"
 import LongMenu from "./longMenu"
 import Burger from "./burger"
+import { theme } from "./theme"
+import { Icon } from "antd"
 
 const HeaderComponent = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
   const menuRef = useRef()
+
   useOnClickOutside(menuRef, setOpen)
+
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "SmallLogo.png" }) {
+        childImageSharp {
+          # Specify a fixed image and fragment.
+          # The default width is 400 pixels
+          fixed(height: 60) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <Header>
-      <p>Baires-asesoría</p>
-      <MenuWrapper ref={menuRef}>
-        <LongMenu />
-        <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen} />
-      </MenuWrapper>
+      <Banner>
+        <Block>
+          <Icon type="phone" />
+          <BannerText>943-532-029</BannerText>
+        </Block>
+        <Block>
+          <Icon type="mobile" />
+          <BannerText>688-764-745</BannerText>
+        </Block>
+      </Banner>
+      <Content>
+        {/* <p style={{ color: theme.primaryDark, fontSize: "1.5rem" }}>
+          Baires-asesoría
+        </p> */}
+        <Img
+          fixed={data.file.childImageSharp.fixed}
+          alt="Gatsby Docs are awesome"
+        />
+        <MenuWrapper ref={menuRef}>
+          <LongMenu />
+          <Burger open={open} setOpen={setOpen} />
+          <Menu open={open} setOpen={setOpen} />
+        </MenuWrapper>
+      </Content>
     </Header>
   )
 }
