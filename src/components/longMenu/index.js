@@ -12,12 +12,7 @@ const MenuComponent = () => {
 
   return (
     <Wrapper>
-      <Menu
-        onClick={handleClick}
-        selectedKeys={[current]}
-        mode="horizontal"
-        theme="dark"
-      >
+      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
         <Menu.Item key="mail">
           <Icon type="home" />
           Inicio
@@ -30,7 +25,7 @@ const MenuComponent = () => {
             </span>
           }
         >
-          <Menu.ItemGroup title={"Tipos"}>
+          <Menu.ItemGroup>
             <Menu.Item key="setting:1">Laboral</Menu.Item>
             <Menu.Item key="setting:2">Físcal</Menu.Item>
             <Menu.Item key="setting:3">Contable financiero</Menu.Item>
