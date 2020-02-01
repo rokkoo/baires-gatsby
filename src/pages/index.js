@@ -8,6 +8,8 @@ import { Section, Title, Content, Text } from "./index.style"
 
 // Components
 import Carousel from "../components/carousel"
+import Form from "../components/form"
+import Services from "../components/services"
 
 const IndexPage = () => {
   return (
@@ -29,6 +31,8 @@ const IndexPage = () => {
             atenderemos dedicándote todo el tiempo que necesites para tus
             consultas o resolver tus dudas.
           </Text>
+          <Services />
+          <Form />
         </Section>
       </Content>
     </Layout>
