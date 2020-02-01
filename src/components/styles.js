@@ -62,7 +62,11 @@ export const Banner = styled.div`
   justify-content: space-around;
   min-height: 60px;
   align-items: center;
-  /* background-color: #2ecc71; */
+  display: none;
+
+  @media (min-width: ${({ theme }) => theme.mobile}) {
+    display: inherit;
+  }
 `
 
 export const BannerText = styled.p`
