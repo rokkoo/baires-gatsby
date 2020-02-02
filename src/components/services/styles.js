@@ -7,7 +7,6 @@ export const ImagesWrapper = styled.div`
   justify-content: center;
   color: ${theme.primaryLight};
   font-size: 1.2rem;
-  cursor: pointer;
   overflow: none;
 
   @media (min-width: ${({ theme }) => theme.mobile}) {
@@ -34,10 +33,23 @@ export const Block = styled.div`
   display: flex;
   justify-content: center;
   margin: 0 5px;
+  cursor: pointer;
+
+  .gatsby-image-wrapper {
+    filter: blur(1px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+  }
 
   :first-child {
     height: auto;
     transition: 0.5s ease;
+  }
+
+  @media (min-width: ${({ theme }) => theme.mobile}) {
+    .gatsby-image-wrapper {
+      filter: blur(0);
+    }
   }
 `
 

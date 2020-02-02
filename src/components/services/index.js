@@ -46,7 +46,7 @@ const Services = () => {
         <Block>
           <Img
             fixed={data.laboral.childImageSharp.fixed}
-            alt="Gatsby Docs are awesome"
+            alt="Servicio laboral"
           />
           <Middle>
             <p>Laboral</p>
@@ -55,7 +55,7 @@ const Services = () => {
         <Block>
           <Img
             fixed={data.fiscal.childImageSharp.fixed}
-            alt="Gatsby Docs are awesome"
+            alt="Servicio fiscal"
           />
           <Middle>
             <p>Físcal</p>
@@ -64,7 +64,7 @@ const Services = () => {
         <Block>
           <Img
             fixed={data.contable.childImageSharp.fixed}
-            alt="Gatsby Docs are awesome"
+            alt="Servicio contable"
           />
           <Middle>
             <p>Contable</p>
