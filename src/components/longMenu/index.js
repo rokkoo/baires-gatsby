@@ -12,7 +12,11 @@ const MenuComponent = () => {
 
   return (
     <Wrapper>
-      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+      <Menu
+        onClick={handleClick}
+        selectedKeys={[current]}
+        mode="horizontal"
+      >
         <Menu.Item key="mail">
           <Icon type="home" />
           Inicio
