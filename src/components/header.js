@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
 
@@ -20,7 +20,7 @@ import { useOnClickOutside } from "../hooks/useOnClickOutside"
 import Menu from "./menu"
 import LongMenu from "./longMenu"
 import Burger from "./burger"
-import { theme } from "./theme"
+
 import { Icon } from "antd"
 
 const HeaderComponent = ({ siteTitle }) => {
@@ -56,13 +56,12 @@ const HeaderComponent = ({ siteTitle }) => {
         </Block>
       </Banner>
       <Content>
-        {/* <p style={{ color: theme.primaryDark, fontSize: "1.5rem" }}>
-          Baires-asesoría
-        </p> */}
-        <Img
-          fixed={data.file.childImageSharp.fixed}
-          alt="Gatsby Docs are awesome"
-        />
+        <Link to="/">
+          <Img
+            fixed={data.file.childImageSharp.fixed}
+            alt="Baires-asesoria logo"
+          />
+        </Link>
         <MenuWrapper ref={menuRef}>
           <LongMenu />
           <Burger open={open} setOpen={setOpen} />

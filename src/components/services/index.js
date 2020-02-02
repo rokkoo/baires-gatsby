@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { Divider } from "antd"
 
@@ -44,13 +44,15 @@ const Services = () => {
       <Divider orientation="left">Servicios</Divider>
       <ImagesWrapper>
         <Block>
-          <Img
-            fixed={data.laboral.childImageSharp.fixed}
-            alt="Servicio laboral"
-          />
-          <Middle>
-            <p>Laboral</p>
-          </Middle>
+          <Link to="/services">
+            <Img
+              fixed={data.laboral.childImageSharp.fixed}
+              alt="Servicio laboral"
+            />
+            <Middle>
+              <p>Laboral</p>
+            </Middle>
+          </Link>
         </Block>
         <Block>
           <Img

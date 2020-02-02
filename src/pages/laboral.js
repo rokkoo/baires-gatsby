@@ -11,21 +11,10 @@ import { List, Point } from "./services.style"
 
 const LaboralPage = () => {
   const data = useStaticQuery(graphql`
-    # query {
-    #   fiscal: file(relativePath: { eq: "carousel/im3.jpg" }) {
-    #     childImageSharp {
-    #       # Specify a fixed image and fragment.
-    #       # The default width is 400 pixels
-    #       fixed(width: '100%') {
-    #         ...GatsbyImageSharpFixed
-    #       }
-    #     }
-    #   }
-    # }
     query {
       fiscal: file(relativePath: { eq: "carousel/im1.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 400, maxHeight: 100) {
+          fluid(maxWidth: 400, maxHeight: 70) {
             ...GatsbyImageSharpFluid
           }
         }
