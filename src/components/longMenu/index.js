@@ -8,13 +8,18 @@ import { Wrapper } from "./styles"
 const { SubMenu } = Menu
 
 const MenuComponent = () => {
-  const [current, setCurrent] = useState("mail")
-  const handleClick = e => setCurrent(e.key)
+  const [current, setCurrent] = useState(
+    sessionStorage.getItem("key") || "home"
+  )
+  const handleClick = e => {
+    sessionStorage.setItem("key", e.key)
+    setCurrent(e.key)
+  }
 
   return (
     <Wrapper>
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-        <Menu.Item key="mail">
+        <Menu.Item key="home" onClick={() => setCurrent("home")}>
           <Link to="/">
             <Icon type="home" />
             Inicio
@@ -29,20 +34,25 @@ const MenuComponent = () => {
           }
         >
           <Menu.ItemGroup>
-            <Menu.Item key="setting:1">
+            <Menu.Item key="laboral" onClick={() => setCurrent("laboral")}>
               <Link to="/laboral">Laboral</Link>
             </Menu.Item>
-            <Menu.Item key="setting:2">
+            <Menu.Item key="fisca" onClick={() => setCurrent("fisca")}>
               <Link to="/fiscal">Físcal</Link>
             </Menu.Item>
-            <Menu.Item key="setting:3">
+            <Menu.Item
+              key="emprendedores"
+              onClick={() => setCurrent("emprendedores")}
+            >
               <Link to="emprendedores">Emprendedores</Link>
             </Menu.Item>
           </Menu.ItemGroup>
         </SubMenu>
-        <Menu.Item key="alipay">
-          <Icon type="mail" />
-          Contacto
+        <Menu.Item key="mail" onClick={() => setCurrent("mail")}>
+          <Link to="#form-contact">
+            <Icon type="mail" />
+            Contacto
+          </Link>
         </Menu.Item>
       </Menu>
     </Wrapper>

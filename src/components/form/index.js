@@ -39,7 +39,7 @@ const Form = () => {
   }
 
   return (
-    <Wrapper>
+    <Wrapper id="form-contact">
       <Divider orientation="left">Formulario</Divider>
       <Input placeholder="Asunto" />
       <Input placeholder="email de contacto" />
