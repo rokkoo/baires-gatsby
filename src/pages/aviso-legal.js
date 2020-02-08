@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // Styles
-import { Section, Title, Text, Content } from "./index.style"
+import { Section, Title, Text, Content } from "../global.styles"
 
 // https://www.zimrre.com/legal-app/
 
