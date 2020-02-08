@@ -20,7 +20,8 @@ export const Section = styled.section`
 
 export const Title = styled.h3`
   align-self: center;
-  font-size: 1.2rem;
+  font-size: ${props => (props.big ? 1.7 : 1.2)}rem;
+  align-self: ${props => (props.start ? "flex-start" : "none")};
 `
 
 export const Text = styled.span`

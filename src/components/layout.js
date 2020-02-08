@@ -7,6 +7,7 @@ import { GlobalStyles } from "./global"
 import { theme } from "./theme"
 
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -14,6 +15,9 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          telephone
+          mobile
+          address
         }
       }
     }
@@ -31,7 +35,12 @@ const Layout = ({ children }) => {
           }}
         >
           <main>{children}</main>
-          <footer>© {new Date().getFullYear()}</footer>
+          <Footer
+            siteTitle={data.site.siteMetadata.title}
+            telephone={data.site.siteMetadata.telephone}
+            mobile={data.site.siteMetadata.mobile}
+            address={data.site.siteMetadata.address}
+          />
         </div>
       </>
     </ThemeProvider>
