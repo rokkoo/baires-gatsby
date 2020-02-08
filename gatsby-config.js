@@ -27,7 +27,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+        ico: "./src/images/SmallLogo.png", // This path is relative to the root of the site.
       },
     },
     {
@@ -51,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/favicon.ico",
+        logo: "./src/images/SmallLogo.png",
 
         // WebApp Manifest Configuration
         appName: null, // Inferred with your package.json
