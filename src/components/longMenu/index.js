@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Menu, Icon } from "antd"
 import { Link } from "gatsby"
 
@@ -8,13 +8,16 @@ import { Wrapper } from "./styles"
 const { SubMenu } = Menu
 
 const MenuComponent = () => {
-  const [current, setCurrent] = useState(
-    sessionStorage.getItem("key") || "home"
-  )
+  const [current, setCurrent] = useState()
+
   const handleClick = e => {
     sessionStorage.setItem("key", e.key)
     setCurrent(e.key)
   }
+
+  useEffect(() => {
+    setCurrent(sessionStorage.getItem("key") || "home")
+  }, [])
 
   return (
     <Wrapper>
