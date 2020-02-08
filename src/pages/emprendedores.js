@@ -24,7 +24,11 @@ const FinancieroPage = () => {
   return (
     <Layout>
       <SEO title="Tipos de servicios" />
-      <Img fluid={data.fiscal.childImageSharp.fluid} alt="Servicio fiscal" />
+      <Img
+        style={{ minHeight: 200 }}
+        fluid={data.fiscal.childImageSharp.fluid}
+        alt="Servicio fiscal"
+      />
       <Content>
         <Section>
           <Title>Servicio emprendedores</Title>

@@ -12,7 +12,7 @@ import { List, Point } from "./services.style"
 const FiscalPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      fiscal: file(relativePath: { eq: "carousel/im3.jpg" }) {
+      fiscal: file(relativePath: { eq: "carousel/im7.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 400, maxHeight: 70) {
             ...GatsbyImageSharpFluid
@@ -24,7 +24,11 @@ const FiscalPage = () => {
   return (
     <Layout>
       <SEO title="Tipos de servicios" />
-      <Img fluid={data.fiscal.childImageSharp.fluid} alt="Servicio fiscal" />
+      <Img
+        style={{ minHeight: 200 }}
+        fluid={data.fiscal.childImageSharp.fluid}
+        alt="Servicio fiscal"
+      />
       <Content>
         <Section>
           <Title>Servicio físcal</Title>
