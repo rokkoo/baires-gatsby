@@ -1,27 +1,35 @@
 import React from "react"
 import { StyledMenu } from "./styles"
+import { Link } from "gatsby"
+import { Divider } from "antd"
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
+  const closeMenu = () => setOpen(false)
+
   return (
     <StyledMenu open={open}>
-      <a href="/">
-        <span role="img" aria-label="about us">
-          &#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;
-        </span>
-        About us
-      </a>
-      <a href="/">
-        <span role="img" aria-label="price">
-          &#x1f4b8;
-        </span>
-        Pricing
-      </a>
-      <a href="/">
-        <span role="img" aria-label="contact">
-          &#x1f4e9;
-        </span>
-        Contact
-      </a>
+      <Link to="/" onClick={closeMenu}>
+        <span role="img" aria-label="about us"></span>
+        Home
+      </Link>
+      <Divider orientation="left" />
+      <Link to="/laboral">
+        <span role="img" aria-label="price"></span>
+        Laboral
+      </Link>
+      <Link to="/fiscal">
+        <span role="img" aria-label="contact"></span>
+        Fiscal
+      </Link>
+      <Link to="/emprendedores">
+        <span role="img" aria-label="contact"></span>
+        Emprendedores
+      </Link>
+      <Divider orientation="left" />
+      <Link to="#form-contact">
+        <span role="img" aria-label="contact"></span>
+        Contacto
+      </Link>
     </StyledMenu>
   )
 }

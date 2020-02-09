@@ -23,7 +23,7 @@ export const StyledBurger = styled.button`
     width: 2rem;
     height: 0.1rem;
     background: ${({ theme, open }) =>
-      open ? theme.primaryLight : theme.primaryDark};
+      open ? theme.primaryDark : theme.primaryDark};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
