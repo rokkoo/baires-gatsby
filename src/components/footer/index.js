@@ -53,7 +53,7 @@ const FooterComponent = ({ siteTitle, telephone, mobile, address }) => {
             href="https://www.google.com/maps/search/?api=1&query=irun+Paseo+Colón+33+1°D"
             target="_blank"
           >
-            ¶ - Abrir en maps
+            - Abrir en maps
           </MapUrl>
         </Block>
         <iframe

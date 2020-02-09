@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // Styles
-import { Section, Title, Text, Content } from "../global.styles"
+import { Section, Title, Text, Content } from "../index.styles"
 
 // https://www.zimrre.com/legal-app/
 
@@ -98,8 +98,8 @@ const AvisoLegal = () => {
           </Text>
         </Section>
         <Section>
-          <Title>Cookies de rendimiento</Title>
-          <Text start>
+          <Title start>Cookies de rendimiento</Title>
+          <Text>
             Este tipo de Cookie recuerda sus preferencias para las herramientas
             que se encuentran en los servicios, por lo que no tiene que volver a
             configurar el servicio cada vez que usted visita. A modo de ejemplo,

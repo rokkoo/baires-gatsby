@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // Styles
-import { Section, Title, Content, Text } from "../global.styles"
+import { Section, Title, Content, Text } from "../index.styles"
 
 // Components
 import Carousel from "../components/carousel"
