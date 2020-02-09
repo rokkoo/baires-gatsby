@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { theme } from "./components/theme"
 
 export const List = styled.ul`
   list-style-type: disc;
@@ -8,6 +7,8 @@ export const List = styled.ul`
   background-color: #0d0c1d0a;
   border-radius: 6px;
   margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 `
 
 export const Point = styled.li`
