@@ -13,9 +13,10 @@ export const StyledMenu = styled.nav`
   right: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 5;
+  overflow: hidden;
 
   /* move menu */
-  transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
+  transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(-100%)")};
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
