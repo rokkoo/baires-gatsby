@@ -41,7 +41,7 @@ const MenuComponent = () => {
               <Link to="/laboral">Laboral</Link>
             </Menu.Item>
             <Menu.Item key="fisca" onClick={() => setCurrent("fisca")}>
-              <Link to="/fiscal">Físcal</Link>
+              <Link to="/fiscal">Fiscal</Link>
             </Menu.Item>
             <Menu.Item
               key="emprendedores"

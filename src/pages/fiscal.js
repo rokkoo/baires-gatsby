@@ -36,8 +36,8 @@ const FiscalPage = () => {
             Nos ocupamos de todas las obligaciones fiscales de tu negocio o
             empresa. Debido a la complejidad de la normativa tributaria y cada
             vez más exigencias en ese ámbito, te ayudamos en la confección y
-            presentación de los modelos necesarios para siempre cumplas con tus
-            obligaciones formales.
+            presentación de los modelos necesarios para que siempre cumplas con
+            tus obligaciones formales.
           </Text>
         </Section>
         <Section>
@@ -46,9 +46,7 @@ const FiscalPage = () => {
             confianza que necesitas. Algunos de nuestros servicios son:
           </Text>
           <List>
-            <Point>
-              Declaraciones de <b>IVA</b>
-            </Point>
+            <Point>Declaraciones de IVA</Point>
             <Point>
               Declaraciones de Retenciones de Personal, Profesionales,
               Alquileres, Rendimientos de Capital Mobiliario
