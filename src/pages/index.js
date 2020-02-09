@@ -12,7 +12,6 @@ import Form from "../components/form"
 import Services from "../components/services"
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql``)
   return (
     <Layout>
       <SEO title="Home" />
