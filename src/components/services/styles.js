@@ -16,7 +16,9 @@ export const ImagesWrapper = styled.div`
       width: 100%;
       height: 100%;
       :hover {
-        filter: grayscale(100%);
+        .gatsby-image-wrapper {
+          filter: grayscale(100%);
+        }
       }
     }
   }
@@ -72,7 +74,11 @@ export const Middle = styled.div`
 
     :hover {
       opacity: 1;
-      filter: grayscale(100%);
+      /* filter: grayscale(100%); */
     }
+  }
+
+  a {
+    color: white;
   }
 `

@@ -44,13 +44,15 @@ const Services = () => {
       <Divider orientation="left">Servicios</Divider>
       <ImagesWrapper>
         <Block>
-          <Link to="/services">
+          <Link to="/laboral">
             <Img
               fixed={data.laboral.childImageSharp.fixed}
               alt="Servicio laboral"
             />
             <Middle>
-              <p>Laboral</p>
+              <Link to="/laboral">
+                <p>Laboral</p>
+              </Link>
             </Middle>
           </Link>
         </Block>
@@ -60,7 +62,9 @@ const Services = () => {
             alt="Servicio fiscal"
           />
           <Middle>
-            <p>Físcal</p>
+            <Link to="/fiscal">
+              <p>Físcal</p>
+            </Link>
           </Middle>
         </Block>
         <Block>
@@ -69,7 +73,9 @@ const Services = () => {
             alt="Servicio contable"
           />
           <Middle>
-            <p>Contable</p>
+            <Link to="/emprendedores">
+              <p>emprendedores</p>
+            </Link>
           </Middle>
         </Block>
       </ImagesWrapper>
