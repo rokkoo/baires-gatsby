@@ -64,11 +64,12 @@ const Form = () => {
         method="post"
         action="/"
         data-netlify="true"
-        data-netlify-recaptcha="true"
+        // data-netlify-recaptcha="true"
+        data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
         <Input
-          placeholder="email"
+          placeholder="asunto"
           type="text"
           required
           name="mail"
@@ -76,10 +77,9 @@ const Form = () => {
         />
         <Input
           placeholder="email de contacto"
-          type="text"
+          type="email"
           name="mail"
           required
-          hidden
           onChange={handleChange}
         />
         <TextArea
@@ -89,7 +89,7 @@ const Form = () => {
           name="mensage"
         />
         <Block>
-          <Captcha ref={recaptchaRef} />
+          {/* <Captcha ref={recaptchaRef} /> */}
           <Button type="submit">Enviar</Button>
         </Block>
       </FormBlock>
