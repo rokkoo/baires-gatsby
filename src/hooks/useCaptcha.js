@@ -1,7 +1,10 @@
 import React, { useState, useMemo } from "react"
 import ReCAPTCHA from "react-google-recaptcha"
 
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY ?? "none"
+const RECAPTCHA_KEY =
+  process.env.SITE_RECAPTCHA_KEY ?? "6LfcMNkUAAAAANeRwUR_kw2o8XFgJ4DiYAe7TUZL"
+
+console.log("RECAPTCHA_KEY", RECAPTCHA_KEY)
 
 if (typeof RECAPTCHA_KEY === "undefined") {
   throw new Error(`
