@@ -74,7 +74,7 @@ const Services = () => {
           />
           <Middle>
             <Link to="/emprendedores">
-              <p>emprendedores</p>
+              <p>Emprendedores</p>
             </Link>
           </Middle>
         </Block>
