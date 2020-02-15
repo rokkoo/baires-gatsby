@@ -3,5 +3,6 @@ export const theme = {
   primaryLight: "#EFFFFA",
   primaryHover: "#343078",
   gray: "#dadada",
+  mainColor: "#621416",
   mobile: "576px",
 }
