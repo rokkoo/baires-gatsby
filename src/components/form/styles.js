@@ -17,6 +17,7 @@ export const Input = styled.input`
   padding: 10px;
   margin: 5px;
   border-style: solid;
+  border-color: ${theme.gray};
 `
 
 export const TextArea = styled.textarea`
@@ -26,6 +27,9 @@ export const TextArea = styled.textarea`
   border-style: solid;
   min-height: 10em;
   resize: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: ${theme.gray};
 `
 
 export const Block = styled.div`
