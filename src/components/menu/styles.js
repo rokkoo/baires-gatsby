@@ -1,4 +1,6 @@
+import { Link as L } from "gatsby"
 import styled from "styled-components"
+import { theme } from "../theme"
 
 export const StyledMenu = styled.nav`
   @media (min-width: ${({ theme }) => theme.mobile}) {
@@ -20,23 +22,25 @@ export const StyledMenu = styled.nav`
 
   /* move menu */
   transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(-100%)")};
+`
 
-  a {
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding: 10px 0;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-    color: ${({ theme }) => theme.primaryDark};
-    text-decoration: none;
-    transition: color 0.3s linear;
+export const Link = styled(L)`
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: ${({ theme }) => theme.primaryDark};
+  text-decoration: none;
+  transition: color 0.3s linear;
 
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-      text-align: center;
-    }
+  color: ${props => (props.active ? theme.mainColor : theme.primaryDark)};
 
-    &:hover {
-      color: ${({ theme }) => theme.primaryHover};
-    }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    text-align: center;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.primaryHover};
   }
 `
