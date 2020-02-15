@@ -10,8 +10,6 @@ const { SubMenu } = Menu
 const MenuComponent = ({ selectedMenu, changeMenu }) => {
   const handleClick = ({ key }) => changeMenu(key)
 
-  console.log("sssssss", selectedMenu)
-
   return (
     <Wrapper>
       <Menu

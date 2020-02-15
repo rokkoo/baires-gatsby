@@ -76,7 +76,7 @@ const Form = () => {
         />
         <Input
           placeholder="email de contacto"
-          type="email"
+          type="text"
           name="mail"
           required
           onChange={handleChange}
