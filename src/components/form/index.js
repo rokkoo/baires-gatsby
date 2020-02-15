@@ -79,6 +79,7 @@ const Form = () => {
           type="text"
           name="mail"
           required
+          hidden
           onChange={handleChange}
         />
         <TextArea
