@@ -67,13 +67,13 @@ const Form = () => {
         data-netlify-recaptcha="true"
         onSubmit={handleSubmit}
       >
-        {/* <Input
-          placeholder="Asunto"
+        <Input
+          placeholder="email"
           type="text"
           required
-          name="asunto"
+          name="mail"
           onChange={handleChange}
-        /> */}
+        />
         <Input
           placeholder="email de contacto"
           type="text"
