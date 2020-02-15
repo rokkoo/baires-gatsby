@@ -37,7 +37,7 @@ const Form = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    // const s = recaptchaRef.current.getValue()
+    const recaptcha = recaptchaRef.current.getValue()
 
     fetch("/", {
       method: "POST",
@@ -72,7 +72,7 @@ const Form = () => {
           placeholder="asunto"
           type="text"
           required
-          name="mail"
+          name="asunto"
           onChange={handleChange}
         />
         <Input
@@ -82,14 +82,7 @@ const Form = () => {
           required
           onChange={handleChange}
         />
-        <Input
-          placeholder="email2"
-          type="email2"
-          name="mail2"
-          hidden
-          required
-          onChange={handleChange}
-        />
+        <Input placeholder="email2" type="email2" name="-----" hidden />
         <TextArea
           required
           placeholder="Mensaje"
