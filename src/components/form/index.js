@@ -4,12 +4,21 @@ import React, { useState } from "react"
 import useCaptcha from "../../hooks/useCaptcha"
 
 // styles
-import { Text, Wrapper, Input, TextArea, Block } from "./styles"
-import { Divider, Button, message } from "antd"
+import {
+  Text,
+  Wrapper,
+  Input,
+  TextArea,
+  Block,
+  FormBlock,
+  Button,
+} from "./styles"
+import { Divider, message } from "antd"
 
 const Form = () => {
-  const { Captcha, captchaValue } = useCaptcha()
-  const [isLoading, setIsloading] = useState(false)
+  const [state, setState] = useState()
+  const { Captcha, encode } = useCaptcha()
+  const recaptchaRef = React.createRef()
 
   const success = () => {
     message.success("Correo enviado!")
@@ -25,31 +34,64 @@ const Form = () => {
     )
   }
 
-  const onClick = value => {
-    try {
-      console.log(value)
-      setIsloading(true)
-      setTimeout(() => {
-        success()
-        setIsloading(false)
-      }, 2000)
-    } catch (e) {
-      error()
-    }
+  const handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    const recaptchaValue = recaptchaRef.current.getValue()
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        "g-recaptcha-response": recaptchaValue,
+        ...state,
+      }),
+    })
+      .then(() => success())
+      .catch(error => error())
+  }
+
+  const handleChange = e => {
+    setState({ ...state, [e.target.name]: e.target.value })
   }
 
   return (
     <Wrapper id="form-contact">
       <Divider orientation="left">Formulario</Divider>
-      <Input placeholder="Asunto" />
-      <Input placeholder="email de contacto" />
-      <TextArea placeholder="Mensaje" />
-      <Block>
-        <Captcha />
-        <Button type="secundary" loading={isLoading} onClick={onClick}>
-          Enviar
-        </Button>
-      </Block>
+      <FormBlock
+        name="Formulario de contacto"
+        method="post"
+        action="/"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+        onSubmit={handleSubmit}
+      >
+        <Input
+          placeholder="Asunto"
+          type="text"
+          required
+          name="asunto"
+          onChange={handleChange}
+        />
+        <Input
+          placeholder="email de contacto"
+          type="email"
+          name="mail"
+          required
+          onChange={handleChange}
+        />
+        <TextArea
+          required
+          placeholder="Mensaje"
+          onChange={handleChange}
+          name="mensage"
+        />
+        <Block>
+          <Captcha ref={recaptchaRef} />
+          <Button type="submit">Enviar</Button>
+        </Block>
+      </FormBlock>
     </Wrapper>
   )
 }

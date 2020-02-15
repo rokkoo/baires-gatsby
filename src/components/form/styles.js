@@ -38,3 +38,15 @@ export const Block = styled.div`
   justify-content: space-between;
   padding: 0 5px;
 `
+
+export const FormBlock = styled.form`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Button = styled.button`
+  padding: 10px;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid ${theme.gray};
+`
