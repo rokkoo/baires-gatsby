@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Baires-asesoría`,
-    description: `Asesoria Baires es una asesoría Contable, fiscal y laboral en Paseo Colón de Irún, Gipuzkoa, dedicada a autónomos, empresas y emprendedores.`,
+    description: `Asesoria Baires es una asesoría Contable, fiscal y laboral en Paseo Colón de Irun, Gipuzkoa, dedicada a autónomos, empresas y emprendedores.`,
     address: "Paseo Colón 33, 1°D",
     telephone: "943-532-029",
     mobile: "688-764-745",
