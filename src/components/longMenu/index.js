@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Menu, Icon } from "antd"
 import { Link } from "gatsby"
 
@@ -7,22 +7,19 @@ import { Wrapper } from "./styles"
 
 const { SubMenu } = Menu
 
-const MenuComponent = () => {
-  const [current, setCurrent] = useState()
+const MenuComponent = ({ selectedMenu, changeMenu }) => {
+  const handleClick = ({ key }) => changeMenu(key)
 
-  const handleClick = e => {
-    sessionStorage.setItem("key", e.key)
-    setCurrent(e.key)
-  }
-
-  useEffect(() => {
-    setCurrent(sessionStorage.getItem("key") || "home")
-  }, [])
+  console.log("sssssss", selectedMenu)
 
   return (
     <Wrapper>
-      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-        <Menu.Item key="home" onClick={() => setCurrent("home")}>
+      <Menu
+        onClick={handleClick}
+        selectedKeys={[selectedMenu]}
+        mode="horizontal"
+      >
+        <Menu.Item key="home" onClick={() => changeMenu("home")}>
           <Link to="/">
             <Icon type="home" />
             Inicio
@@ -37,21 +34,21 @@ const MenuComponent = () => {
           }
         >
           <Menu.ItemGroup>
-            <Menu.Item key="laboral" onClick={() => setCurrent("laboral")}>
+            <Menu.Item key="laboral" onClick={() => changeMenu("laboral")}>
               <Link to="/laboral">Laboral</Link>
             </Menu.Item>
-            <Menu.Item key="fisca" onClick={() => setCurrent("fisca")}>
+            <Menu.Item key="fisca" onClick={() => changeMenu("fisca")}>
               <Link to="/fiscal">Fiscal</Link>
             </Menu.Item>
             <Menu.Item
               key="emprendedores"
-              onClick={() => setCurrent("emprendedores")}
+              onClick={() => changeMenu("emprendedores")}
             >
               <Link to="emprendedores">Emprendedores</Link>
             </Menu.Item>
           </Menu.ItemGroup>
         </SubMenu>
-        <Menu.Item key="mail" onClick={() => setCurrent("mail")}>
+        <Menu.Item key="mail" onClick={() => changeMenu("mail")}>
           <Link to="#form-contact">
             <Icon type="mail" />
             Contacto

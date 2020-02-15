@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
@@ -25,6 +25,7 @@ import { Icon } from "antd"
 
 const HeaderComponent = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
+  const [selectedMenu, setSelectedMenu] = useState()
   const menuRef = useRef()
 
   useOnClickOutside(menuRef, setOpen)
@@ -43,6 +44,15 @@ const HeaderComponent = ({ siteTitle }) => {
     }
   `)
 
+  useEffect(() => {
+    setSelectedMenu(sessionStorage.getItem("key") || "home")
+  }, [])
+
+  const changeMenu = menuName => {
+    sessionStorage.setItem("key", menuName)
+    setSelectedMenu(menuName)
+  }
+
   return (
     <Header>
       <Banner>
@@ -56,16 +66,21 @@ const HeaderComponent = ({ siteTitle }) => {
         </Block>
       </Banner>
       <Content>
-        <Link to="/">
+        <Link to="/" onClick={() => changeMenu("home")}>
           <Img
             fixed={data.file.childImageSharp.fixed}
             alt="Baires-asesoria logo"
           />
         </Link>
         <MenuWrapper ref={menuRef}>
-          <LongMenu />
+          <LongMenu selectedMenu={selectedMenu} changeMenu={changeMenu} />
           <Burger open={open} setOpen={setOpen} />
-          <Menu open={open} setOpen={setOpen} />
+          <Menu
+            open={open}
+            setOpen={setOpen}
+            selectedMenu={selectedMenu}
+            changeMenu={changeMenu}
+          />
         </MenuWrapper>
       </Content>
     </Header>
