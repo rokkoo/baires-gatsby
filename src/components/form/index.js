@@ -62,11 +62,11 @@ const Form = () => {
       <FormBlock
         name="Formulario de contacto"
         method="post"
-        action="/"
+        // action="/"
         data-netlify="true"
         // data-netlify-recaptcha="true"
         data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
+        // onSubmit={handleSubmit}s
       >
         <Input
           placeholder="asunto"
@@ -86,6 +86,7 @@ const Form = () => {
           placeholder="email2"
           type="email2"
           name="mail2"
+          hidden
           required
           onChange={handleChange}
         />
