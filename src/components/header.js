@@ -35,7 +35,7 @@ const HeaderComponent = ({ siteTitle }) => {
         childImageSharp {
           # Specify a fixed image and fragment.
           # The default width is 400 pixels
-          fixed(height: 60) {
+          fixed(height: 80) {
             ...GatsbyImageSharpFixed
           }
         }
