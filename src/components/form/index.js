@@ -37,7 +37,7 @@ const Form = () => {
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    const recaptchaValue = recaptchaRef.current.getValue()
+    // const s = recaptchaRef.current.getValue()
 
     fetch("/", {
       method: "POST",
@@ -76,9 +76,16 @@ const Form = () => {
           onChange={handleChange}
         />
         <Input
-          placeholder="email de contacto"
+          placeholder="email"
           type="email"
           name="mail"
+          required
+          onChange={handleChange}
+        />
+        <Input
+          placeholder="email2"
+          type="email2"
+          name="mail2"
           required
           onChange={handleChange}
         />
