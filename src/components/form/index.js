@@ -81,7 +81,6 @@ const Form = () => {
           required
           onChange={handleChange}
         />
-        <Input placeholder="email2" type="email2" name="-----" hidden />
         <TextArea
           required
           placeholder="Mensaje"
