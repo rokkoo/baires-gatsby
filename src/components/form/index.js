@@ -35,21 +35,20 @@ const Form = () => {
   }
 
   const handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    const recaptcha = recaptchaRef.current.getValue()
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        "g-recaptcha-response": recaptchaValue,
-        ...state,
-      }),
-    })
-      .then(() => success())
-      .catch(error => error())
+    // e.preventDefault()
+    // const form = e.target
+    // const recaptcha = recaptchaRef.current.getValue()
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({
+    //     "form-name": form.getAttribute("name"),
+    //     "g-recaptcha-response": recaptchaValue,
+    //     ...state,
+    //   }),
+    // })
+    //   .then(() => success())
+    //   .catch(error => error())
   }
 
   const handleChange = e => {
@@ -62,7 +61,7 @@ const Form = () => {
       <FormBlock
         name="Formulario de contacto"
         method="post"
-        // action="/"
+        action="/enviado"
         data-netlify="true"
         // data-netlify-recaptcha="true"
         data-netlify-honeypot="bot-field"
