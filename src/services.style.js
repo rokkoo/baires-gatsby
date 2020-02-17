@@ -9,6 +9,7 @@ export const List = styled.ul`
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: start;
 `
 
 export const Point = styled.li`
