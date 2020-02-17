@@ -21,9 +21,17 @@ export const Header = styled.header`
 export const Content = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
   padding: 18px;
+  justify-content: space-between;
+
+  @media (min-width: ${({ theme }) => theme.mobile}) {
+    justify-content: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    justify-content: space-between;
+  }
 `
 
 export const Block = styled.div`
@@ -76,6 +84,11 @@ export const BannerText = styled.p`
 export const MenuWrapper = styled.div`
   display: flex;
   align-items: center;
+
+  @media (min-width: ${({ theme }) => theme.mobile}) {
+    position: absolute;
+    right: 0;
+  }
 `
 
 export const Main = styled.main`

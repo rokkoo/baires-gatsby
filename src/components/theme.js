@@ -5,4 +5,5 @@ export const theme = {
   gray: "#dadada",
   mainColor: "#621416",
   mobile: "576px",
+  tablet: "800px",
 }
