@@ -24,13 +24,12 @@ export const Content = styled.div`
   align-items: center;
   padding: 18px;
   justify-content: space-between;
+  flex-direction: row;
 
   @media (min-width: ${({ theme }) => theme.mobile}) {
+    padding: 0 0 18px 0;
     justify-content: center;
-  }
-
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    justify-content: space-between;
+    flex-direction: column;
   }
 `
 
@@ -84,11 +83,6 @@ export const BannerText = styled.p`
 export const MenuWrapper = styled.div`
   display: flex;
   align-items: center;
-
-  @media (min-width: ${({ theme }) => theme.mobile}) {
-    position: absolute;
-    right: 0;
-  }
 `
 
 export const Main = styled.main`
