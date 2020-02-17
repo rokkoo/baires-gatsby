@@ -15,16 +15,21 @@ const Menu = ({ open, setOpen, selectedMenu, changeMenu }) => {
         active={selectedMenu === "home"}
         onClick={() => closeMenu("home")}
       >
-        <span role="img" aria-label="about us"></span>
         Home
       </Link>
       <Divider orientation="left" />
+      <Link
+        to="/contable"
+        active={selectedMenu === "contable"}
+        onClick={() => closeMenu("contable")}
+      >
+        Contable
+      </Link>
       <Link
         to="/laboral"
         active={selectedMenu === "laboral"}
         onClick={() => closeMenu("laboral")}
       >
-        <span role="img" aria-label="price"></span>
         Laboral
       </Link>
       <Link
@@ -32,7 +37,6 @@ const Menu = ({ open, setOpen, selectedMenu, changeMenu }) => {
         active={selectedMenu === "fiscal"}
         onClick={() => closeMenu("fiscal")}
       >
-        <span role="img" aria-label="contact"></span>
         Fiscal
       </Link>
       <Link
@@ -40,7 +44,6 @@ const Menu = ({ open, setOpen, selectedMenu, changeMenu }) => {
         active={selectedMenu === "emprendedores"}
         onClick={() => closeMenu("emprendedores")}
       >
-        <span role="img" aria-label="contact"></span>
         Emprendedores
       </Link>
       <Divider orientation="left" />
@@ -49,7 +52,6 @@ const Menu = ({ open, setOpen, selectedMenu, changeMenu }) => {
         active={selectedMenu === "mail"}
         onClick={() => closeMenu("mail")}
       >
-        <span role="img" aria-label="contact"></span>
         Contacto
       </Link>
     </StyledMenu>

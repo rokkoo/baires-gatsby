@@ -32,6 +32,9 @@ const MenuComponent = ({ selectedMenu, changeMenu }) => {
           }
         >
           <Menu.ItemGroup>
+            <Menu.Item key="contable" onClick={() => changeMenu("contable")}>
+              <Link to="/contable">Contable</Link>
+            </Menu.Item>
             <Menu.Item key="laboral" onClick={() => changeMenu("laboral")}>
               <Link to="/laboral">Laboral</Link>
             </Menu.Item>
