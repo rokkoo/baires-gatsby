@@ -9,6 +9,15 @@ import { ImagesWrapper, Block, Middle } from "./styles"
 const Services = () => {
   const data = useStaticQuery(graphql`
     query {
+      contable: file(relativePath: { eq: "carousel/im8.jpg" }) {
+        childImageSharp {
+          # Specify a fixed image and fragment.
+          # The default width is 400 pixels
+          fixed(height: 300, width: 200) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       laboral: file(relativePath: { eq: "carousel/im1.jpg" }) {
         childImageSharp {
           # Specify a fixed image and fragment.
@@ -27,7 +36,7 @@ const Services = () => {
           }
         }
       }
-      contable: file(relativePath: { eq: "carousel/im4.jpg" }) {
+      emprendedores: file(relativePath: { eq: "carousel/im4.jpg" }) {
         childImageSharp {
           # Specify a fixed image and fragment.
           # The default width is 400 pixels
@@ -43,6 +52,17 @@ const Services = () => {
     <>
       <Divider orientation="left">Servicios</Divider>
       <ImagesWrapper>
+        <Block>
+          <Img
+            fixed={data.contable.childImageSharp.fixed}
+            alt="Servicio contable"
+          />
+          <Middle>
+            <Link to="/contable">
+              <p>Contable</p>
+            </Link>
+          </Middle>
+        </Block>
         <Block>
           <Link to="/laboral">
             <Img
@@ -69,8 +89,8 @@ const Services = () => {
         </Block>
         <Block>
           <Img
-            fixed={data.contable.childImageSharp.fixed}
-            alt="Servicio contable"
+            fixed={data.emprendedores.childImageSharp.fixed}
+            alt="Servicio emprendedores"
           />
           <Middle>
             <Link to="/emprendedores">
