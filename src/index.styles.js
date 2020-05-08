@@ -16,7 +16,7 @@ export const Section = styled.section`
   background-color: #fff;
   color: ${({ theme }) => theme.primaryDark};
   max-width: ${({ theme }) => theme.mobile};
-  text-align: center;
+  /* text-align: center; */
 `
 
 export const Title = styled.h3`

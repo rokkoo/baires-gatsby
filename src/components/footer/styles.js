@@ -54,3 +54,7 @@ export const AddressWrapper = styled.address``
 export const HourWrapper = styled.div``
 
 export const ContactWrapper = styled.div``
+
+export const Column = styled.div`
+  display: grid;
+`

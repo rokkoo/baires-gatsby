@@ -8,8 +8,6 @@ import SEO from "../components/seo"
 // Styles
 import { Section, Title, Text, Content } from "../index.styles"
 
-// https://www.zimrre.com/legal-app/
-
 const AvisoLegal = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -33,72 +31,126 @@ const AvisoLegal = () => {
       <Content>
         <Section>
           <Title big>Aviso legal</Title>
-          <Title start>Política de Cookies</Title>
+          <Title start>Información legal</Title>
           <Text>
-            En esta web se utilizan cookies de terceros y propias para conseguir
-            que tengas una mejor experiencia de navegación, puedas compartir
-            contenido en redes sociales y para que podamos obtener estadísticas
-            de los usuarios. Puedes evitar la descarga de cookies a través de la
-            configuración de tu navegador, evitando que las cookies se almacenen
-            en su dispositivo. Como propietario de este sitio web, te comunico
-            que no utilizamos ninguna información personal procedente de
-            cookies, tan sólo realizamos estadísticas generales de visitas que
-            no suponen ninguna información personal. Es muy importante que leas
-            la presente política de cookies y comprendas que, si continúas
-            navegando, consideraremos que aceptas su uso. Según los términos
-            incluidos en el artículo 22.2 de la Ley 34/2002 de Servicios de la
-            Sociedad de la Información y Comercio Electrónico, si continúas
-            navegando, estarás prestando tu consentimiento para el empleo de los
-            referidos mecanismos.
+            En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de
+            la Sociedad de la Información y de Comercio Electrónico, le
+            informamos que el dominio de internet www.baires-asesoria.com es
+            titularidad de Baires Asesoramiento, S.L. (NIF: B75234534), con
+            domicilio en Paseo de Colón, 33, 1º D, en 20301 Irun (Gipuzkoa),
+            teléfono 943532029, correo electrónico info@baires-asesoria.com,
+            inscrita en el Registro Mercantil de Gipuzkoa, Tomo 2935, Folio 50,
+            Hoja SS-42479. Baires Asesoramiento, S.L. (en adelante “el
+            Responsable del Tratamiento”) es una sociedad cuyo objeto es la
+            prestación de servicios de asesoramiento y gestión contable, fiscal,
+            laboral y en materias relacionadas. La finalidad del sitio web es
+            dar a conocer los servicios del Responsable del Tratamiento. El
+            sitio web ubicado en www.baires-asesoria.com (en adelante “el sitio
+            web”) es propiedad de Baires Asesoramiento, S.L. La persona que
+            visita y utiliza este sitio web es usuaria del sitio web (en
+            adelante “la persona usuaria”).
           </Text>
         </Section>
         <Section>
-          <Title start>Entidad Responsable</Title>
+          <Title start>1. Condiciones Generales</Title>
           <Text>
-            La entidad responsable de la recogida, procesamiento y utilización
-            de tus datos personales, en el sentido establecido por la Ley de
-            Protección de Datos Personales es la página www.baires-asesoria.com,
-            propiedad de Mónica Fernández Alvarez – Paseo Colón 33, 1°D. 20301
-            Irun.
+            La persona usuaria accede a este sitio web de forma voluntaria. El
+            acceso a este sitio web tiene carácter gratuito. La navegación en
+            este sitio web implica aceptar y conocer las advertencias legales,
+            condiciones y términos de uso, política de privacidad y política de
+            cookies contenidos en él. Si la persona usuaria no está de acuerdo
+            con estas condiciones, no podrá hacer uso de este sitio web. El
+            acceso a este sitio web, así como el uso que pueda hacerse de la
+            información que contiene, son de la exclusiva responsabilidad de la
+            persona usuaria, que se compromete a hacer uso del mismo de acuerdo
+            a la finalidad del sitio web. La persona usuaria no puede hacer un
+            uso ilícito de la información contenida en este sitio web, ni llevar
+            a cabo acciones que puedan dañar o alterar sus sistemas
+            informáticos. Queda prohibida la inclusión y comunicación de
+            contenidos, por parte de las personas usuarias, que sean falsos o
+            inexactos y que induzcan o puedan inducir a error al Responsable del
+            Tratamiento, a otras personas usuarias del sitio web o terceros. La
+            persona usuaria será la única responsable de los perjuicios que
+            cause mediante la comunicación de dichos datos. Queda prohibido el
+            uso de datos personales de terceros sin su consentimiento, así como
+            el uso de datos identificativos de terceros con el ánimo de hacerse
+            pasar por o fingir ser cualquier otra persona o entidad. El
+            Responsable del Tratamiento realiza los máximos esfuerzos a su
+            alcance para evitar errores en los contenidos que se publican en el
+            sitio web, reservándose la facultad de poder modificarlos en
+            cualquier momento. Baires Asesoramiento, S.L. declina expresamente
+            cualquier responsabilidad por error u omisión en los contenidos de
+            este sitio web y de los daños y perjuicios que puedan deberse a la
+            falta de veracidad, exactitud y actualidad de los mismos. El sitio
+            web puede ofrecer enlaces a otros sitios web o facilitar su acceso
+            mediante un buscador ubicado en el sitio web. Baires Asesoramiento,
+            S.L. no asume ninguna responsabilidad en relación con estos sitios
+            enlazados, ni los resultados de las búsquedas, ya que no tiene
+            ningún tipo de control sobre ellos, su contenido, productos y
+            servicios ofrecidos, etc. La finalidad de estos servicios es
+            informar a la persona usuaria de otras fuentes de información, por
+            lo que la persona usuaria accede bajo su exclusiva responsabilidad
+            al contenido y en las condiciones de uso que rijan en los mismos. En
+            el caso de enlaces a redes sociales, titularidad del Responsable del
+            Tratamiento o de terceros, las mismas se regirán por las condiciones
+            generales de dichas redes. Baires Asesoramiento, S.L. no se
+            responsabilizará de ninguna consecuencia, daño o perjuicio que
+            pudieran derivarse del uso de este sitio web o de sus contenidos,
+            incluidos daños informáticos y la introducción de virus o cualquier
+            tipo de software malicioso. El Responsable del Tratamiento no
+            garantiza la ausencia de virus ni de otros elementos dañinos en el
+            sitio web, introducidos por terceros, que puedan producir
+            alteraciones en los sistemas físicos o lógicos de las personas
+            usuarias, pero utiliza los medios a su alcance para que esto no
+            suceda. Baires Asesoramiento, S.L. se reserva el derecho de
+            modificar o borrar en cualquier momento, sin previo aviso y/o
+            justificación, el diseño, la configuración y la información
+            contenida en este sitio web, si así lo estima oportuno. El
+            Responsable del Tratamiento no se hace responsable de los perjuicios
+            que estas modificaciones puedan causar. No obstante, utilizará los
+            recursos que tenga a su alcance para informar a las personas
+            usuarias de dichas modificaciones.
           </Text>
         </Section>
         <Section>
-          <Title start>¿Qué son las cookies?</Title>
+          <Title start>2. Propiedad intelectual e industrial</Title>
           <Text>
-            Las cookies son un conjunto de datos que un servidor deposita en el
-            navegador del usuario para recoger la información de registro
-            estándar de Internet y la información del comportamiento de los
-            visitantes en un sitio web. Es decir, se trata de pequeños archivos
-            de texto que quedan almacenados en el disco duro del ordenador y que
-            sirven para identificar al usuario cuando se conecta nuevamente al
-            sitio web. Su objetivo es registrar la visita del usuario y guardar
-            cierta información. Su uso es común y frecuente en la web ya que
-            permite a las páginas funcionar de manera más eficiente y conseguir
-            una mayor personalización y análisis sobre el comportamiento del
-            usuario.
+            Los derechos de propiedad de este sitio web, de sus páginas,
+            secciones, pantallas, la información que contienen, su apariencia y
+            diseño, textos, fotografías, imágenes, audios, vídeos, animaciones,
+            sus productos y servicios, marcas, logos, lemas, etc. son propiedad
+            de Baires Asesoramiento, S.L., salvo que se especifique otra cosa.
+            En ningún caso el acceso o navegación en el sitio web implica
+            renuncia, transmisión o licencia total o parcial de Baires
+            Asesoramiento, S.L. para uso personal y/o profesional a la persona
+            usuaria sobre sus derechos de propiedad intelectual e industrial. La
+            reproducción, distribución, comercialización o transformación no
+            autorizadas de estos contenidos constituye una infracción de los
+            derechos de propiedad intelectual del Responsable del Tratamiento.
+            La persona usuaria se compromete a no realizar ninguna acción que
+            perjudique la titularidad de este sitio web. La utilización no
+            autorizada de la información contenida en este sitio web, así como
+            los perjuicios ocasionados en los derechos de propiedad intelectual
+            e industrial de sus titulares, pueden dar lugar al ejercicio de las
+            acciones que legalmente correspondan y, si procede, a las
+            responsabilidades que de dicho ejercicio se deriven, incluidas las
+            de naturaleza económica.
           </Text>
         </Section>
         <Section>
-          <Title start>¿Qué tipos de cookies existen?</Title>
+          <Title start>3. Modificaciones</Title>
           <Text>
-            Las cookies utilizadas en nuestro sitio web, son de sesión y de
-            terceros, y nos permiten almacenar y acceder a información relativa
-            al idioma, el tipo de navegador utilizado, y otras características
-            generales predefinidas por el usuario, así como, seguir y analizar
-            la actividad que lleva a cabo, con el objeto de introducir mejoras y
-            prestar nuestros servicios de una manera más eficiente y
-            personalizada. Las cookies, en función de su permanencia, pueden
-            dividirse en cookies de sesión o permanentes. Las que expiran cuando
-            el usuario cierra el navegador. Las que expiran en función de cuando
-            se cumpla el objetivo para el que sirven (por ejemplo, para que el
-            usuario se mantenga identificado en los servicios de Mónica
-            Fernández Alvarez) o bien cuando se borran manualmente.
-            Adicionalmente, en función de su objetivo, las cookies pueden
-            clasificarse de la siguiente forma:
+            Estas Condiciones podrán sufrir modificaciones cuando Baires
+            Asesoramiento, S.L. lo considere oportuno, bien con la finalidad de
+            adecuarse a los cambios legislativos, bien con el fin de llevar a
+            cabo otro tipo de mejoras. Estas modificaciones serán válidas desde
+            su publicación en este sitio web. El Responsable del Tratamiento
+            utilizará los medios a su alcance para dar a conocer a las personas
+            usuarias del sitio web los cambios realizados.
           </Text>
         </Section>
         <Section>
-          <Title start>Cookies de rendimiento</Title>
+          <Title start>4. Jurisdicción</Title>
           <Text>
             Este tipo de Cookie recuerda sus preferencias para las herramientas
             que se encuentran en los servicios, por lo que no tiene que volver a
@@ -112,148 +164,19 @@ const AvisoLegal = () => {
         <Section>
           <Title start>Cookies de geo-localización</Title>
           <Text>
-            Estas cookies son utilizadas para averiguar en qué país se encuentra
-            cuando se solicita un servicio. Esta cookie es totalmente anónima, y
-            sólo se utiliza para ayudar a orientar el contenido a su ubicación.
-          </Text>
-        </Section>
-        <Section>
-          <Title start>Cookies de registro</Title>
-          <Text>
-            Las cookies de registro se generan una vez que el usuario se ha
-            registrado o posteriormente ha abierto su sesión, y se utilizan para
-            identificarle en los servicios con los siguientes objetivos:
-            Mantener al usuario identificado de forma que, si cierra un
-            servicio, el navegador o el ordenador y en otro momento u otro día
-            vuelve a entrar en dicho servicio, seguirá identificado, facilitando
-            así su navegación sin tener que volver a identificarse. Esta
-            funcionalidad se puede suprimir si el usuario pulsa la funcionalidad
-            [cerrar sesión], de forma que esta cookie se elimina y la próxima
-            vez que entre en el servicio el usuario tendrá que iniciar sesión
-            para estar identificado. Comprobar si el usuario está autorizado
-            para acceder a ciertos servicios, por ejemplo, para participar en un
-            concurso. Adicionalmente, algunos servicios pueden utilizar
-            conectores con redes sociales tales como Facebook o Twitter. Cuando
-            el usuario se registra en un servicio con credenciales de una red
-            social, autoriza a la red social a guardar una Cookie persistente
-            que recuerda su identidad y le garantiza acceso a los servicios
-            hasta que expira. El usuario puede borrar esta Cookie y revocar el
-            acceso a los servicios mediante redes sociales actualizando sus
-            preferencias en la red social que específica.
-          </Text>
-        </Section>
-        <Section>
-          <Title start>Cookies de analíticas</Title>
-          <Text>
-            Cada vez que un usuario visita un servicio, una herramienta de un
-            proveedor externo genera una cookie analítica en el ordenador del
-            usuario. Esta cookie que sólo se genera en la visita, servirá en
-            próximas visitas a los servicios de Mónica Fernández Alvarez para
-            identificar de forma anónima al visitante. Los objetivos principales
-            que se persiguen son: Permitir la identificación anónima de los
-            usuarios navegantes a través de la cookie (identifica navegadores y
-            dispositivos, no personas) y por lo tanto la contabilización
-            aproximada del número de visitantes y su tendencia en el tiempo.
-            Identificar de forma anónima los contenidos más visitados y por lo
-            tanto más atractivos para los usuarios Saber si el usuario que está
-            accediendo es nuevo o repite visita. Importante: Salvo que el
-            usuario decida registrarse en un servicio de Mónica Fernández
-            Alvarez, la cookie nunca irá asociada a ningún dato de carácter
-            personal que pueda identificarle. Dichas cookies sólo serán
-            utilizadas con propósitos estadísticos que ayuden a la optimización
-            de la experiencia de los usuarios en el sitio.
-          </Text>
-        </Section>
-        <Section>
-          <Title start>Cookies de publicidad</Title>
-          <Text>
-            Este tipo de cookies permiten ampliar la información de los anuncios
-            mostrados a cada usuario anónimo en los servicios de Mónica
-            Fernández Alvarez. Entre otros, se almacena la duración o frecuencia
-            de visualización de posiciones publicitarias, la interacción con las
-            mismas, o los patrones de navegación y/o comportamientos del usuario
-            ya que ayudan a conformar un perfil de interés publicitario. De este
-            modo, permiten ofrecer publicidad afín a los intereses del usuario.
-          </Text>
-        </Section>
-        <Section>
-          <Title start>Cookies publicitarias de terceros</Title>
-          <Text>
-            Además de la publicidad gestionada por las webs de Mónica Fernández
-            Alvarez en sus servicios, las webs de Mónica Fernández Alvarez
-            ofrecen a sus anunciantes la opción de servir anuncios a través de
-            terceros (“Ad-Servers”). De este modo, estos terceros pueden
-            almacenar cookies enviadas desde los servicios de Mónica Fernández
-            Alvarez procedentes de los navegadores de los usuarios, así como
-            acceder a los datos que en ellas se guardan. Las empresas que
-            generan estas cookies tienen sus propias políticas de privacidad. En
-            la actualidad, las webs de Mónica Fernández Alvarez utilizan la
-            plataforma Doubleclick (Google) para gestionar estos servicios. Para
-            más información, acuda a
-            <a href="http://www.google.es/policies/privacy/ads/#toc-doubleclick">
-              http://www.google.es/policies/privacy/ads/#toc-doubleclick
-            </a>
-            y a{" "}
-            <a href="http://www.google.es/policies/privacy/ads/">
-              http://www.google.es/policies/privacy/ads/
-            </a>
-          </Text>
-        </Section>
-        <Section>
-          <Title start>
-            ¿Cómo puedo deshabilitar las cookies en mi navegador?
-          </Title>
-          <Text>
-            Se pueden configurar los diferentes navegadores para avisar al
-            usuario de la recepción de cookies y, si se desea, impedir su
-            instalación en el equipo. Asimismo, el usuario puede revisar en su
-            navegador qué cookies tiene instaladas y cuál es el plazo de
-            caducidad de las mismas, pudiendo eliminarlas. Para ampliar esta
-            información consulte las instrucciones y manuales de su navegador:
-            Para más información sobre la administración de las cookies en
-            Google Chrome:{" "}
-            <a href="https://support.google.com/chrome/answer/95647?hl=es">
-              https://support.google.com/chrome/answer/95647?hl=es
-            </a>
-            Para más información sobre la administración de las cookies en
-            Internet Explorer:
-            <a href="http://windows.microsoft.com/es-es/windows-vista/cookies-frequently-asked-questions">
-              http://windows.microsoft.com/es-es/windows-vista/cookies-frequently-asked-questions
-            </a>
-            Para más información sobre la administración de las cookies en
-            Mozilla Firefox:
-            <a href="http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we">
-              http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we
-            </a>
-            Para más información sobre la administración de las cookies en
-            Safari:{" "}
-            <a href="http://www.apple.com/es/privacy/use-of-cookies/">
-              http://www.apple.com/es/privacy/use-of-cookies/
-            </a>
-            Para más información sobre la administración de las cookies en
-            Opera:{" "}
-            <a href="http://help.opera.com/Windows/11.50/es-ES/cookies.html">
-              http://help.opera.com/Windows/11.50/es-ES/cookies.html
-            </a>{" "}
-            Si desea dejar de ser seguido por Google Analytics visite:
-            <a href="http://tools.google.com/dlpage">
-              http://tools.google.com/dlpage
-            </a>
-          </Text>
-        </Section>
-        <Section>
-          <Title start>
-            Actualizaciones y cambios en la política de privacidad/cookies
-          </Title>
-          <Text>
-            Las webs de Mónica Fernández Alvarez pueden modificar esta Política
-            de Cookies en función de exigencias legislativas, reglamentarias, o
-            con la finalidad de adaptar dicha política a las instrucciones
-            dictadas por la Agencia Española de Protección de Datos, por ello se
-            aconseja a los usuarios que la visiten periódicamente. Cuando se
-            produzcan cambios significativos en esta Política de Cookies, estos
-            se comunicarán a los usuarios bien mediante la web o a través de
-            correo electrónico a los usuarios registrados.
+            Las relaciones establecidas entre Baires Asesoramiento, S.L. y la
+            persona usuaria se regirán por lo dispuesto en la normativa vigente
+            acerca de la legislación aplicable y la jurisdicción competente. No
+            obstante, para los casos en los que la normativa prevea la
+            posibilidad a las partes de someterse a un fuero, el Responsable del
+            Tratamiento y la persona usuaria, con renuncia expresa a cualquier
+            otro fuero que pudiera corresponderles, se someten a los Juzgados y
+            Tribunales de Irun (Gipuzkoa). Baires Asesoramiento, S.L. perseguirá
+            el incumplimiento de las anteriores condiciones, así como cualquier
+            utilización indebida de los contenidos y funciones incluidas en su
+            sitio web ejerciendo todas las acciones civiles y penales que le
+            puedan corresponder en Derecho, incluyendo las de naturaleza
+            económica.
           </Text>
         </Section>
       </Content>
