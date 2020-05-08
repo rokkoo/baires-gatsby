@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { theme } from "../theme"
+import { string } from "prop-types"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -37,6 +38,8 @@ export const Block = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 5px;
+  align-content: center;
+  align-items: center;
 `
 
 export const FormBlock = styled.form`
@@ -47,6 +50,23 @@ export const FormBlock = styled.form`
 export const Button = styled.button`
   padding: 10px;
   height: fit-content;
-  background-color: white;
+  background-color: ${props => (props.active ? "#dcdde1" : "white")};
   border: 1px solid ${theme.gray};
+  cursor: pointer;
+  border-radius: 2px;
 `
+
+export const Row = styled.div`
+  display: flex;
+`
+
+export const UnderlineText = styled.a`
+  text-decoration: underline;
+  color: black;
+`
+export const Comp = styled.p`
+  margin: 0 8px 0 8px;
+  padding: 0;
+`
+
+export const CheckBox = styled.input``

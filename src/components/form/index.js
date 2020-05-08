@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 
 // Hooks
 import useCaptcha from "../../hooks/useCaptcha"
@@ -12,13 +12,16 @@ import {
   Block,
   FormBlock,
   Button,
+  UnderlineText,
+  Comp,
+  CheckBox,
 } from "./styles"
 import { Divider, message } from "antd"
 
 const Form = () => {
   const [state, setState] = useState()
   const { Captcha, encode } = useCaptcha()
-  const recaptchaRef = React.createRef()
+  const [isChecked, setISchecked] = useState(false)
 
   const success = () => {
     message.success("Correo enviado!")
@@ -35,6 +38,8 @@ const Form = () => {
   }
 
   const handleSubmit = e => {
+    console.log("entr")
+
     // e.preventDefault()
     // const form = e.target
     // const recaptcha = recaptchaRef.current.getValue()
@@ -55,6 +60,10 @@ const Form = () => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
+  const handleClickCheckBox = ({ target }) => {
+    setISchecked(target.checked)
+  }
+
   return (
     <Wrapper id="form-contact">
       <Divider orientation="left">Formulario</Divider>
@@ -65,7 +74,7 @@ const Form = () => {
         data-netlify="true"
         // data-netlify-recaptcha="true"
         data-netlify-honeypot="bot-field"
-        // onSubmit={handleSubmit}s
+        onSubmit={handleSubmit}
       >
         <Input
           placeholder="asunto"
@@ -90,7 +99,19 @@ const Form = () => {
         />
         <Block>
           {/* <Captcha ref={recaptchaRef} /> */}
-          <Button type="submit">Enviar</Button>
+          <Button type="submit" active={isChecked} disabled={!isChecked}>
+            Enviar
+          </Button>
+          <Block>
+            <Block>
+              <UnderlineText href="/aviso-legal">Aviso legal </UnderlineText>
+              <Comp>y la</Comp>
+              <UnderlineText href="/politica-privacidad">
+                Política de Privacidad
+              </UnderlineText>
+            </Block>
+            <CheckBox type="checkbox" onChange={handleClickCheckBox} />
+          </Block>
         </Block>
       </FormBlock>
     </Wrapper>
