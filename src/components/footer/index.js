@@ -13,6 +13,7 @@ import {
   Block,
   MapUrl,
   InformationWrapper,
+  Column,
 } from "./styles"
 import { Divider } from "antd"
 
@@ -88,13 +89,22 @@ const FooterComponent = ({ siteTitle, telephone, mobile, address }) => {
       <Divider style={{ opacity: 0.1, margin: "20px 0" }} />
 
       <Text>{currentDate()}</Text>
-      <Link
-        to="/aviso-legal"
-        style={{ color: "white", opacity: 0.8 }}
-        onClick={() => sessionStorage.setItem("key", "none")}
-      >
-        Aviso legal
-      </Link>
+      <Column>
+        <Link
+          to="/aviso-legal"
+          style={{ color: "white", opacity: 0.8 }}
+          onClick={() => sessionStorage.setItem("key", "none")}
+        >
+          Aviso legal
+        </Link>
+        <Link
+          to="/politica-privacidad"
+          style={{ color: "white", opacity: 0.8 }}
+          onClick={() => sessionStorage.setItem("key", "none")}
+        >
+          Política de privacidad
+        </Link>
+      </Column>
     </Footer>
   )
 }
