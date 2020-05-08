@@ -14,7 +14,7 @@ import Services from "../components/services"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Asesoría irún" />
       <Carousel />
       <Content>
         <Section>
